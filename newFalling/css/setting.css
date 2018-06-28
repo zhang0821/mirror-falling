@@ -1,0 +1,247 @@
+@import url(querry.css);
+/*关闭按钮*/
+.closeBtn{
+	 width:100%;
+	 height:38px;
+	 float:left;
+	 line-height:39px;
+}
+.closeBtn > div{
+	width:30px;height: 30px;
+	border-radius: 50% 50%;
+	float: right;
+	margin-right: 20px;
+	margin-top:5px; 
+	background:rgba(34,117,76,0.7);
+}
+.closeBtn > div a{
+	font-size:40px;
+	font-weight:bold;
+	width:20px;height:20px;
+	margin-left:10px;
+	margin-top:-7px;
+	float:left;
+	color:#fff; 
+	transform:rotate(45deg);
+	cursor:pointer;
+}
+
+/*选项卡切换实现*/
+.setBox,#checkBox{
+	position:absolute;
+	width:1600px;
+	height:700px;
+	left:150px;
+	top:200px;
+	background:rgba(239,228,176,0.9);
+	border-radius:30px;
+	opacity:0;
+	z-index:-10;
+}
+.tabs{
+	  width: 100%;
+	  float: none;
+	  list-style: none;
+	  position: relative;
+	  text-align: center;
+}
+.tabs li{
+	width: 50%;
+	height: 600px;
+	float: left;
+	border-bottom:1px solid #fff;
+}
+
+.bigTab { /*移走小圆圈*/
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.tabs label {
+  display: block;
+  background: rgba(239,228,176,0.5);
+  padding: 14px 21px;
+  border-radius: 20px 20px 0 0;
+  font:30px 微软雅黑;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  margin-top: 3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.tabs label:hover {
+  background:rgba(239,228,176,0.5);
+}
+.tabs [id^="tab"]:checked + label {
+  top: 0;
+  padding-top: 17px;
+  background:rgb(214,190,46);
+}
+
+.tabs .tab-content {
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  height: 510px;
+  font-size: 25px;
+  position: absolute;
+  margin-top: 10px;
+  left: 0;
+}
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block;
+}
+.submitBox{
+	width:100%;
+	height:49px;
+	float:left;
+}
+.subButton{
+	width:150px;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	text-align:center;
+	line-height:40px;
+	background:#fff;
+	border-radius:10px;
+	font-size:25px;
+	font-family:微软雅黑;
+	font-weight:bold;
+}
+
+/*配置界面*/
+.threshPart{
+	width:600px;
+	height:296px;
+	margin-top:76px;
+	float:left;
+	margin-left:80px;
+	border:2px solid #fff;
+	border-radius:10px;
+}
+.threshPart11,.threshPart12,.threshPart13{
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	height:60px;
+	margin-top:29px;
+	text-align:center;
+	line-height:60px;
+	font-family:微软雅黑;
+	font-size:25px;
+}
+.threshPart2 > div{
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	height:50px;
+	margin-top:19px;
+	text-align:center;
+	line-height:50px;
+	font-family:微软雅黑;
+	font-size:22px;
+}
+.threshPart11 input{
+	width:100px;
+	height:25px;
+	margin-left:20px;
+}
+.threshPart12 input{
+	width:140px;
+	height:25px;
+	margin-left:20px;
+	font-weight: bold;
+}
+.threshPart2 input{
+	width:120px;
+	height:25px;
+	margin-left:20px;
+	margin-top:30px;
+}
+.threshPart13 input{
+	float: right;
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+}
+.threshPart13 label{
+	float: right;
+	width: 90px;
+	font-size: 18px;
+	font-weight: normal;
+}
+/*联系人配置*/
+.addNew,.currentContacter{
+	margin-top:10px;
+	border-top:1px solid #fff;
+	width:100%;
+	height:138px;
+	line-height:138px;
+	float:left;
+	text-align:center;
+}
+
+.fillNew,#showCurrentTop{
+	width:900px;
+	height:120px;
+	margin-top:9px;
+	float:left;
+	margin-left:50px;
+}
+.newAdminInsert{
+width:30px;height:20px;float:left;margin-left:30px;margin-top:20px;	
+}
+#showCurrentTop{
+	/*height:200px;*/
+	height:auto;
+	width:1100px;
+	margin-top:20px;
+}
+#showCurrentTop > input{
+	width:20px;
+	height:20px;float:left;margin-left:10px;margin-top:20px;
+}
+.submitNew{
+	width:80px;
+	height:80px;
+	border-radius:50% 50%;
+	background:#fff;
+	float:left;
+	margin-left:50px;
+	margin-top:39px;
+	text-align:center;
+	line-height:80px;
+	cursor:pointer;
+	
+}
+.submitNew:hover{
+	background:#ccc;
+}
+.submitNew p{
+	font:30px 微软雅黑;
+	font-weight:bold;
+}
+.currentContacter{
+	height:240px;
+	line-height:240px;
+	
+}
+.addNew p,.currentContacter p{
+	width:50px;
+	height:auto;
+	float:left;
+	margin-top:15px;
+	font:20px 微软雅黑;
+	border: 1px solid #fff;
+	border-radius:5px;
+	margin-left:200px;
+}
+.currentContacter p{
+	margin-top:50px;
+}

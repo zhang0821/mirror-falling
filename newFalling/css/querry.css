@@ -1,0 +1,106 @@
+
+.hisCheckBox{
+	width:15%;
+	margin-right:5%;
+	height:20px;
+	margin-top:15px;
+	line-height: 30px; 
+	float: left;
+	color: #000;
+	text-align: center;
+	font:15px "微软雅黑";
+	background:rgb(180,200,162);
+	border-radius:30px;
+	cursor:pointer;
+}
+
+.checkBoxTop{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	background:rgba(239,228,176,0.9); 
+	font:25px "微软雅黑";
+	color:rgba(34,117,76,0.9);
+	overflow:hidden;
+}
+#hisDateBox{
+	width:60px;
+	height:20px;
+	margin-top:10px;
+	float:right;
+	margin-right:20px;
+	background:#fff;
+	border-radius:5px;
+	font: 15px "微软雅黑";
+	text-align:center;
+	
+	
+}
+.dateLiBox{
+	width:60px;
+	height:160px;
+	float:right;
+	margin-top:-10px;
+	margin-right:45px;
+	z-index:-1000;
+	opacity:0;
+	cursor: pointer;
+	
+}
+.dateLiBox li{
+
+	width:60px;
+	height:20px;
+	float:left;
+	font: 15px "微软雅黑";
+	text-align:center;
+	background:#fff;
+	border-radius:5px;
+	cursor: pointer;
+	color:rgba(34,117,76,0.9); 
+}
+#hisDataContainer{
+	position:absolute;
+	z-index:-10;
+	width:100%;
+	height:640px;
+	float:left;
+	background:rgba(34,117,76,0.6);/*绿色*//*rgba(239,228,176,0.9)黄色rgba(255,201,14,0.7)深黄色*/
+	overflow:scroll;
+}
+.dataForm{
+	border: 1px solid rgba(239,228,176,0.9);
+	border-radius:10px;
+}
+.dataForm thead{
+	height:50px;
+}
+.dataForm td{
+    border-left: 1px solid rgba(239,228,176,0.9);
+    border-top: 1px solid rgba(239,228,176,0.9);
+    padding: 10px;
+    text-align: center;    
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+   
+}
+.dataForm th, .dataForm th:hover {
+    border-left: 1px solid rgba(239,228,176,0.9);
+	border-bottom: 1px solid rgba(239,228,176,0.9);
+    padding: 20px;  
+    background-color:rgba(34,117,76,0.6) !important;
+	color:#fff !important;
+	font-weight:normal;
+}
+.dataForm tbody tr:nth-child(even) {
+    background: rgba(34,117,76,0.9) !important;
+	color:#fff;
+}
+.dataForm tr:hover *{
+    background:rgba(239,228,176,0.9);
+	color:#000;
+}

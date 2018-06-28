@@ -1,0 +1,146 @@
+.curveTitle{
+	width: 90%;
+	height: 80px;
+	margin-top: 10px;	
+	margin-left: 5%;		
+	background: rgba(239,228,176,0.9);
+	border-radius: 20px;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+}
+.curveTitle p{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	height: 60px;
+	margin-top:10px;
+	text-align: center;
+	color: #fff;
+	font:60px "微软雅黑";
+	
+}
+.userStateBox{
+	width: 90%;
+	margin-left: 5%;
+	height: 720px;
+	margin-top: 20px;
+	/*background: rgba(239,228,176,0.9);去掉*/
+}
+.singleUser{
+	width: 42.5%;
+	height: 300px;
+	margin-top: 40px;
+	float: left;
+	margin-left: 5%;
+
+	border-radius: 20px;
+}
+.infoShow1,.infoShow2,.infoShow3,.infoShow0{
+	float: left;
+	width: 100%;
+	height:30px;
+	/*background: #ccc;*/
+	/*color:rgb(214,190,47);*/
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	font-family: 微软雅黑;
+	line-height: 30px;
+
+}
+.uesrinfo{
+	height: 70%;
+	float: left;
+	margin-top: 2%;
+	border-radius: 30px;
+	/*background: rgba(239,228,176,0.9);*/
+}
+
+.uesrinfo1,.uesrinfo3{
+	width: 0%;
+	float: left;
+	/*background: rgba(239,228,176,0.9);*/
+}
+.uesrinfo2,.uesrinfo4{
+	width: 0%;
+	float: right;
+	/*background: rgba(239,228,176,0.9);*/
+}
+.uesrinfo1 p,.uesrinfo3 p{
+	width: 40px;
+	line-height: 35px;
+	/*background-color:rgba(255,201,14,0.5);*/
+	background: rgba(239,228,176,0.9);
+	color:#f60;
+	font-size:30px;
+
+	font-family: 微软雅黑;
+	border-radius:30px;
+}
+.uesrinfo2 p,.uesrinfo4 p{
+	width: 40px;
+	line-height: 35px;
+	/*background-color:rgba(255,201,14,0.5);*/
+	background: rgba(239,228,176,0.9);
+	color:#f60;
+	font-size:30px;
+	float: right;
+	font-family: 微软雅黑;
+	border-radius:30px;
+}
+.userstate1,.userstate3,.userstate2,.userstate4{
+	width: 100%;
+	height: 270px;
+	float: left;
+}
+.statePct{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.CCBox{
+	height: 300px;
+	margin-top: 40px;
+	width: 42.5%;
+	float: left;
+	margin-left: 5%;
+	border-radius: 10px;
+	position: relative;
+	cursor:pointer;
+	
+}
+.CBox{
+	height: 290px;
+	margin-top: 5px;
+	width: 96%;
+	margin-left: 2%;
+	border-radius: 5px;
+	
+}
+/*纯样式图标*/
+/**/
+.CCBox:before{
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width:90%;
+	height: 90%;
+	top:5%;
+	left:5%;
+	background:transparent;
+	box-shadow: 8px 8px 20px rgba(34,117,76,1);
+	transform: skew(-15deg) rotate(-5deg);
+}
+.CCBox:after{
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width:90%;
+	height: 90%;
+	top:5%;
+	left:5%;
+	background:transparent;
+	box-shadow: -8px 8px 20px rgba(34,117,76,1);
+	transform: skew(15deg) rotate(5deg);
+}

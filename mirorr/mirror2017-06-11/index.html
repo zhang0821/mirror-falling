@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mirror</title>
+	<script src="https://cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+	<h3>人</h3>
+	<button id="fetch">获取日程</button>
+	<button id="message">获取留言</button>
+	<button id="pm">PM2.5</button>
+	<ul id="ul"></ul>
+	
+	<div class="temper"></div>
+</body>
+</html>
+<script>
+
+$(function(){
+		
+	$("#fetch").on("click", function(){
+		var url = "http://localhost/weather/person.php";
+		var data = {
+			name: 'hjk',
+			type: 'schedule'
+		}
+		$.get(url, data, function(e){
+			var data = $.parseJSON(e);
+			$.each(data, function(idx, obj) {
+				$("#ul").append("<li>" + obj.schedule + 'time:' + obj.time + "</li>");
+	    		// alert(obj.schedule);
+			});
+		});
+	});
+
+	$("#message").on("click", function(){
+		var url = "http://localhost/weather/person.php";
+		var data = {
+			name: 'hjk',
+			type: 'message'
+		}
+		$.get(url, data, function(e){
+			var data = $.parseJSON(e);
+			$.each(data, function(idx, obj) {
+				$("#ul").append("<li>" + obj.message + 'time:' + obj.time + "</li>");
+	    		// alert(obj.schedule);
+			});
+		});
+	});
+
+	$("#pm").on("click", function(){
+		var url = "http://localhost/weather/temp.php";
+		var data = {
+			pm: 50
+		}
+		$.post(url, data, function(e){
+			var data = $.parseJSON(e);
+			$(".temper").html(data.num + '-' + data.info);
+			console.log(data);
+		});
+	});
+		
+
+});
+
+</script>

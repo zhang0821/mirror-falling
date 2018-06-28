@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import url(setting.css);
+@import url(curve.css);
+ * {
+	margin:0;
+	padding: 0;
+	text-decoration:none;
+}
+a,a:hover{
+	text-decoration:none; 
+}
+li,ul,img,div{
+    border: 0;
+    list-style: none;
+}
+body{
+	background: rgba(239,228,176,0.7);
+}
+.header{
+	width:100%;
+	min-width:1200px;
+	height:60px;
+	background:rgba(34,117,76,0.6);
+	border-radius: 10px;
+	/*background:rgb(153,217,234);*/
+}
+
+.nav-pct{
+	width: 80px;
+	height: 50px;
+	margin-top: 5px;
+	margin-left: 20px;
+	float:left;
+	border-radius:15px;
+
+}
+.nav-text{
+	color:#fff;
+	height: 50px;
+	margin-top: 10px;
+	float:left;
+	margin-left: 20px;
+	font: 25px "微软雅黑";
+}
+
+.nav-date-box{
+	float: right;
+    background-color:rgba(255,201,14,0.7);
+	height: 60px;
+	text-align:center;
+	width:400px;
+	border-radius: 10px;
+}
+.date-content{
+	color: #fff;
+	font: 20px "微软雅黑";
+	line-height: 60px;
+}
+
+.Content{
+	width: 100%;
+	min-width: 1200px;
+	float: left;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	background:rgba(34,117,76,0.3);
+}
+
+/*功能框样式*/
+.configBox{
+	position: fixed;
+	width:5%;
+	float: left;
+	height: 175px;
+	background: rgba(239,228,176,0.9);
+	margin-top: 260px;
+	border-radius: 20px;
+	box-shadow: 3px 1px 1px rgba(0,0,0,0.3);
+	opacity: 0;
+
+} 
+.configBox  li{
+	width:100%;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 25px;
+	float: left;
+	cursor: pointer;/*光标形状是手型*/
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 10px;
+}
+.CircleBox{
+	position: absolute;
+	position: fixed;
+	top: 490px;
+	left: -30px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50% 50%;
+	background: #fff;
+	z-index: 100;
+}
+.configBox  li a{
+	color: #fff;
+}
+.configBox li:hover{
+	background:rgba(255,201,14,0.7);
+}
+
+.footer{
+	float: left;
+	width: 70%;
+	height: 30px;
+	margin-left: 15%;
+	line-height: 30px;
+	margin-top: 5px;
+}

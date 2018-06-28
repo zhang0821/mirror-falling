@@ -1,0 +1,81 @@
+body{
+	background-image: url(../img/backblue.jpg);
+}
+
+.pctContainer{
+	height: 500px;
+	margin-top: 30px;
+	float: left;
+	background-repeat: no-repeat;
+	/*background: #ccc;*/
+	background-size: 100% 100%;
+}
+.pctContainer1{
+	width: 45%;
+	margin-left: 5%;
+	background-image: url(../img/body33.png);
+}
+.pctContainer2{
+	width: 45%;	
+	height: 400px;
+	background-image: url(../img/body11.png);
+}
+.bear{
+	position: absolute;
+	position: fixed;
+	width: 500px;
+	height: 300px;
+	background-repeat: no-repeat;
+}
+.bear1{
+	left: 55%;
+	top: 50%;
+	background-image: url(../img/bear41.gif);
+}
+.bear2{
+	left: 30%;
+	top: 60%;
+	background-image: url(../img/bear44.gif);
+}
+.bear3{
+	left: 80%;
+	top: 60%;
+	background-image: url(../img/bear43.gif);
+}
+.bear4{
+	left: 7%;
+	top: 55%;
+	background-image: url(../img/bear33.gif);
+}
+.login_body{ 
+	position: absolute;
+	width: 32%;
+	height: 40px;
+	left:55%;
+	top:93%;
+	border-top: 2px solid #000;
+	/*background-color:#ECEFF1;*/
+}
+.username,.pwd{
+	width: 35%;
+	height: 30px;
+	margin-left: 2%;
+	float: left;
+	border:1px solid #fff;
+	border-radius: 5px;
+	background:none;
+	color: #fff;
+	text-align: center;
+	margin-top: 5px;
+}
+.login{
+	background:none;
+	float: left;
+	margin-left: 20px;
+	color: #fff;
+	width: 60px;
+	height: 25px;
+	margin-top: 10px;
+	border-radius: 5px;
+
+}

@@ -1,0 +1,297 @@
+============================================================
+Time  2017/06/16 14:28:42 761 
+============================================================
+[2017/06/16 14:28:42 761] isr_1conn  2088 SYS_MSG_LOAD_CLOUD  
+[2017/06/16 14:28:42 762] isr_1conn  2109 SYS_MSG_REGCB_CLOUD param0 =   msp_status_cb  param1 =  func(7517d058) 
+[2017/06/16 14:28:42 763] isr_1conn  2109 SYS_MSG_REGCB_CLOUD param0 =   cloud_rslt_cb  param1 =  func(7517dd38) 
+[2017/06/16 14:28:42 763] isr_1conn  2109 SYS_MSG_REGCB_CLOUD param0 =   cloud_err_cb  param1 =  func(7517de68) 
+[2017/06/16 14:28:42 763] isr_1conn  2109 SYS_MSG_REGCB_CLOUD param0 =   cloud_status_cb  param1 =  func(7517df28) 
+[2017/06/16 14:28:42 764] isr_1conn  1382 onesoc  
+[2017/06/16 14:28:42 764] isr_1conn  1383 ASR_CLOUD_MSG_SSB  
+[2017/06/16 14:28:42 765] isr_1conn  1398 isr_1conn  cloud_cisr1PdHHBHeER+XHYc2aadatw6alcgwaa  268436457  1428405382  
+[2017/06/16 14:28:42 766] isr_1conn  1466 not login!  
+[2017/06/16 14:28:42 766] isr_1conn  1578 nil  
+[2017/06/16 14:28:42 766] isr_1conn  1647 speex-wb  
+[2017/06/16 14:28:42 767] isr_1conn  1713 once bytes  122  
+[2017/06/16 14:28:42 768] isr_1conn  1734 User set url is   nil  
+[2017/06/16 14:28:42 768] transport  596  paramkvsport is   nil  
+[2017/06/16 14:28:42 769] transport  801  net type:  standard  
+[2017/06/16 14:28:42 769] transport  802  net operator:  def  
+[2017/06/16 14:28:42 769] transport  803  use proxy:  false  
+[2017/06/16 14:28:42 775] network    85   ipfromenv ,  ipcache  dev.voicecloud.cn  def  117.121.21.146  
+[2017/06/16 14:28:42 775] transport  998  using cached ip:  117.121.21.146  
+[2017/06/16 14:28:42 775] transport  1033 ns_i =  nil  
+[2017/06/16 14:28:42 775] transport  1108 [soc] connect   117.121.21.146  80  
+[2017/06/16 14:28:42 777] isr_1conn  1882 ASR_CLOUD_MSG_AUW  30439  4  
+[2017/06/16 14:28:42 777] isr_1conn  1901 starttimer status_cb_timeout, timeout is:  3000  
+[2017/06/16 14:28:42 787] transport  458  [soc] [0] connected  
+[2017/06/16 14:28:42 788] isr_1conn  393  transport connect ok  
+[2017/06/16 14:28:42 788] isr_1conn  1100 send ssb request  
+[2017/06/16 14:28:42 788] isr_1conn  825  lver:  nil  
+[2017/06/16 14:28:42 788] isr_1conn  830  cfg_ver:  nil  
+[2017/06/16 14:28:42 789] isr_1conn  1154 no_audio is true  
+[2017/06/16 14:28:42 789] isr_1conn  1182 [session] send 1th audio  
+[2017/06/16 14:28:42 789] isr_1conn  1184 totalsz =   30439  
+[2017/06/16 14:28:42 789] isr_1conn  1187 start netperf_fs_timer  
+[2017/06/16 14:28:42 789] isr_1conn  1208 [session] send last audio!  
+[2017/06/16 14:28:42 791] isr_1conn  1226 send rslt request  
+[2017/06/16 14:28:42 791] transport  1160 build http request.  
+[2017/06/16 14:28:42 792] transport  1262 POST /msp.do HTTP/1.1
+Host: dev.voicecloud.cn
+Content-Type: multipart/mixed;boundary=--
+Content-Length: 540
+User-Agent: iFLYCloud
+Cache-Control: no-cache
+Accept: */*
+
+----
+CL:183
+CT:text/plain
+
+ver=MSSP+0%2E9&sub=iat&cmd=ssb&ssm=1&auf=audio%2FL16%3Brate%3D16000&cver=5%2E0%2E11%2E1086&net%5Ftype=standard&csid=cisr1PdHHBHeER%2BXHYc2aadatw6alcgwaa&key=0c4G4KJ85svIwbN6G9fVenmQ==
+----
+CL:56
+CT:text/appinfo
+CE:gzip,encrypt/0.2
+
+L¿b‹Ü7é.òÅx  
+[2017/06/16 14:28:42 794] transport  1160 build http request.  
+[2017/06/16 14:28:42 795] transport  1262 POST /msp.do HTTP/1.1
+Host: dev.voicecloud.cn
+Content-Type: multipart/mixed;boundary=--
+Content-Length: 30689
+User-Agent: iFLYCloud
+Cache-Control: no-cache
+Accept: */*
+
+----
+CL:132
+CT:text/plain
+
+ver=MSSP+0%2E9&sub=iat&cmd=auw&aus=5&cver=5%2E0%2E11%2E1086&csid=cisr1PdHHBHeER%2BXHYc2aadatw6alcgwaa&key=0cv/3v4xt9ZKsbN6G9fVenmQ==
+----
+CL:30448
+CT:audio/L16;rate=16000
+CE:speex-wb,encrypt/0.2
+
+©´ﬁº_º,“]›››››››∂î¡AAUt`—15vçííõ+2∂\Ìº%y)!?UÄòTÑºUÄòUÄòR	∂X;‹¥ÊákÓHpˇ5Gﬁç”wv.è5jçjçÂÎ@ëë†Wé‹ËøœaˇUÄòU∞£%˛"UM§2	º3æı	R$≥å∞”8èÒ“C€”â¨¿⁄á∆Bï‰ÑΩÀÖ¶-Ú5Ô≈m£◊ ∏Ä±Üá4"	ºØ’IRµ{nF”
+¥ÃÄu}Û#’cﬂ`,–åÒk§π¿Õ◊√oR¨ˆ’Ü'56h¥í©„BcQ˚(ï°R3H6$$;◊‹¶Ã•’Z†~ı®ÓH˘Ö	¿£ˆª–ñ]ˇ«FE_WVF5p%TYdÖïÇ	´‘@µëBa◊ı…¡$!ﬂ•kg∫å:µk
+I˝vÕà1|¨÷ïVÕ7Á‚œT˝ÑTˇ#µ%tí	¶æı
+∆Sª®6k–;$bíøÂ≤ç~Á¥…Ïuˇ¨Ûé‚4˛D¨™ŸÛM˘ﬂ«s/ÿ&d2_‚	£‘'’R?˚bêd©¶Øö,›Nl6˘(Ò}¨æ°§9€Ô≠&BÁ%ZüV¯ôá0Ω(Ç‚˛≠–	´€wU$∆;$"P˚îfÃ≤R}œÉr0®ˇ˙ ∑¥‹¸¡úÀX›Ôjz‘€ÔTw$tÅ∞$ ÖÖÉb2	´ÿ®ïB·∆ˇµå@ú≥öri/
+[2017/06/16 14:28:42 877] transport  1160 build http request.  
+[2017/06/16 14:28:42 877] transport  1262 POST /msp.do HTTP/1.1
+Host: dev.voicecloud.cn
+Content-Type: text/plain
+Content-Length: 126
+User-Agent: iFLYCloud
+Cache-Control: no-cache
+Accept: */*
+
+ver=MSSP+0%2E9&sub=iat&cmd=grs&cver=5%2E0%2E11%2E1086&csid=cisr1PdHHBHeER%2BXHYc2aadatw6alcgwaa&key=0c0W7NPiyn31AbN6G9fVenmQ==  
+[2017/06/16 14:28:42 882] transport  480  [soc] [0] send ok  715  
+[2017/06/16 14:28:42 882] transport  480  [soc] [0] send ok  30866  
+[2017/06/16 14:28:42 883] transport  480  [soc] [0] send ok  284  
+[2017/06/16 14:28:42 884] transport  492  [soc] [0] readable  
+[2017/06/16 14:28:42 885] transport  1534 HTTP/1.1 302 Temporarily Moved
+Date: Sat, 17 Jun 2017 07:31:02 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+X-UA-Compatible: IE=edge;IE=11;IE=10;IE=9
+Location: http://login.ccnu.edu.cn/?cmd=login&mac=b8:27:eb:9c:3f:cd&ip=10.147.42.146&essid=CCNU&apname=AP-YBS-1D-4F-429&apgroup=ST-YBS1-3D-AP-GROUP&url=http%3A%2F%2Fdev%2Evoicecloud%2Ecn%2Fmsp%2Edo
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+
+  
+[2017/06/16 14:28:42 885] transport  1281 a_complete_httpmessage  302  
+[2017/06/16 14:28:42 885] transport  1300 [http] HTTP 302, Temporarily Moved To  http://login.ccnu.edu.cn/?cmd=login&mac=b8:27:eb:9c:3f:cd&ip=10.147.42.146&essid=CCNU&apname=AP-YBS-1D-4F-429&apgroup=ST-YBS1-3D-AP-GROUP&url=http%3A%2F%2Fdev%2Evoicecloud%2Ecn%2Fmsp%2Edo  
+[2017/06/16 14:28:42 885] transport  1139 [soc] disconnect   
+[2017/06/16 14:28:42 888] network    85   ipfromenv ,  ipcache  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:42 888] transport  1033 ns_i =  nil  
+[2017/06/16 14:28:42 962] transport  155  [dns] [0] response 202.114.33.12  
+[2017/06/16 14:28:42 962] transport  163  202  114  33  12  
+[2017/06/16 14:28:42 962] transport  199  ip front is  202.114.33  
+[2017/06/16 14:28:42 962] transport  229  unexpected ip  
+[2017/06/16 14:28:42 965] network    85   ipfromenv ,  ipcache  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:42 966] network    85   ipfromenv ,  ipcfg  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:42 967] transport  1108 [soc] connect   116.213.69.195  80  
+[2017/06/16 14:28:42 978] transport  458  [soc] [0] connected  
+[2017/06/16 14:28:42 978] isr_1conn  393  transport connect ok  
+[2017/06/16 14:28:42 979] transport  1160 build http request.  
+[2017/06/16 14:28:42 979] transport  1187 not a valid mssp message! ret=  0  
+[2017/06/16 14:28:44 791] isr_1conn  1218 grslt timeout  
+[2017/06/16 14:28:44 791] isr_1conn  1226 send rslt request  
+[2017/06/16 14:28:44 791] transport  1160 build http request.  
+[2017/06/16 14:28:44 792] transport  1262 POST / HTTP/1.1
+Host: login.ccnu.edu.cn
+Content-Type: text/plain
+Content-Length: 126
+User-Agent: iFLYCloud
+Cache-Control: no-cache
+Accept: */*
+
+ver=MSSP+0%2E9&sub=iat&cmd=grs&cver=5%2E0%2E11%2E1086&csid=cisr1PdHHBHeER%2BXHYc2aadatw6alcgwaa&key=0cb12To4eO1kgbN6G9fVenmQ==  
+[2017/06/16 14:28:44 793] transport  480  [soc] [0] send ok  278  
+[2017/06/16 14:28:44 822] transport  492  [soc] [0] readable  
+[2017/06/16 14:28:44 822] transport  1534 HTTP/1.1 302 Temporarily Moved
+Date: Sat, 17 Jun 2017 07:31:04 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+X-UA-Compatible: IE=edge;IE=11;IE=10;IE=9
+Location: http://login.ccnu.edu.cn/?cmd=login&mac=b8:27:eb:9c:3f:cd&ip=10.147.42.146&essid=CCNU&apname=AP-YBS-1D-4F-429&apgroup=ST-YBS1-3D-AP-GROUP&url=http%3A%2F%2Flogin%2Eccnu%2Eedu%2Ecn%2F
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+
+  
+[2017/06/16 14:28:44 823] transport  1281 a_complete_httpmessage  302  
+[2017/06/16 14:28:44 823] transport  1300 [http] HTTP 302, Temporarily Moved To  http://login.ccnu.edu.cn/?cmd=login&mac=b8:27:eb:9c:3f:cd&ip=10.147.42.146&essid=CCNU&apname=AP-YBS-1D-4F-429&apgroup=ST-YBS1-3D-AP-GROUP&url=http%3A%2F%2Flogin%2Eccnu%2Eedu%2Ecn%2F  
+[2017/06/16 14:28:44 823] transport  1139 [soc] disconnect   
+[2017/06/16 14:28:44 825] network    85   ipfromenv ,  ipcache  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:44 825] transport  1033 ns_i =  nil  
+[2017/06/16 14:28:44 828] transport  155  [dns] [0] response 202.114.33.12  
+[2017/06/16 14:28:44 829] transport  163  202  114  33  12  
+[2017/06/16 14:28:44 829] transport  199  ip front is  202.114.33  
+[2017/06/16 14:28:44 829] transport  229  unexpected ip  
+[2017/06/16 14:28:44 831] network    85   ipfromenv ,  ipcache  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:44 833] network    85   ipfromenv ,  ipcfg  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:44 833] transport  1108 [soc] connect   116.213.69.195  80  
+[2017/06/16 14:28:44 854] transport  458  [soc] [0] connected  
+[2017/06/16 14:28:44 855] isr_1conn  393  transport connect ok  
+[2017/06/16 14:28:44 855] transport  1160 build http request.  
+[2017/06/16 14:28:44 855] transport  1187 not a valid mssp message! ret=  0  
+[2017/06/16 14:28:45 778] isr_1conn  236  The called number of status_cb_timeout:  1  
+[2017/06/16 14:28:46 793] isr_1conn  1218 grslt timeout  
+[2017/06/16 14:28:46 793] isr_1conn  1226 send rslt request  
+[2017/06/16 14:28:46 793] transport  1160 build http request.  
+[2017/06/16 14:28:46 794] transport  1262 POST / HTTP/1.1
+Host: login.ccnu.edu.cn
+Content-Type: text/plain
+Content-Length: 126
+User-Agent: iFLYCloud
+Cache-Control: no-cache
+Accept: */*
+
+ver=MSSP+0%2E9&sub=iat&cmd=grs&cver=5%2E0%2E11%2E1086&csid=cisr1PdHHBHeER%2BXHYc2aadatw6alcgwaa&key=0cXYeMTxrLyHsbN6G9fVenmQ==  
+[2017/06/16 14:28:46 796] transport  480  [soc] [0] send ok  278  
+[2017/06/16 14:28:46 944] transport  492  [soc] [0] readable  
+[2017/06/16 14:28:46 946] transport  1534 HTTP/1.1 302 Temporarily Moved
+Date: Sat, 17 Jun 2017 07:31:06 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+X-UA-Compatible: IE=edge;IE=11;IE=10;IE=9
+Location: http://login.ccnu.edu.cn/?cmd=login&mac=b8:27:eb:9c:3f:cd&ip=10.147.42.146&essid=CCNU&apname=AP-YBS-1D-4F-429&apgroup=ST-YBS1-3D-AP-GROUP&url=http%3A%2F%2Flogin%2Eccnu%2Eedu%2Ecn%2F
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+
+  
+[2017/06/16 14:28:46 946] transport  1281 a_complete_httpmessage  302  
+[2017/06/16 14:28:46 946] transport  1300 [http] HTTP 302, Temporarily Moved To  http://login.ccnu.edu.cn/?cmd=login&mac=b8:27:eb:9c:3f:cd&ip=10.147.42.146&essid=CCNU&apname=AP-YBS-1D-4F-429&apgroup=ST-YBS1-3D-AP-GROUP&url=http%3A%2F%2Flogin%2Eccnu%2Eedu%2Ecn%2F  
+[2017/06/16 14:28:46 946] transport  1139 [soc] disconnect   
+[2017/06/16 14:28:46 951] network    85   ipfromenv ,  ipcache  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:46 951] transport  1033 ns_i =  nil  
+[2017/06/16 14:28:46 973] transport  155  [dns] [0] response 202.114.33.12  
+[2017/06/16 14:28:46 973] transport  163  202  114  33  12  
+[2017/06/16 14:28:46 974] transport  199  ip front is  202.114.33  
+[2017/06/16 14:28:46 974] transport  229  unexpected ip  
+[2017/06/16 14:28:46 978] network    85   ipfromenv ,  ipcache  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:46 981] network    85   ipfromenv ,  ipcfg  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:46 982] transport  1108 [soc] connect   116.213.69.195  80  
+[2017/06/16 14:28:46 994] transport  458  [soc] [0] connected  
+[2017/06/16 14:28:46 995] isr_1conn  393  transport connect ok  
+[2017/06/16 14:28:46 995] transport  1160 build http request.  
+[2017/06/16 14:28:46 995] transport  1187 not a valid mssp message! ret=  0  
+[2017/06/16 14:28:48 778] isr_1conn  236  The called number of status_cb_timeout:  2  
+[2017/06/16 14:28:48 796] isr_1conn  1218 grslt timeout  
+[2017/06/16 14:28:48 796] isr_1conn  1226 send rslt request  
+[2017/06/16 14:28:48 796] transport  1160 build http request.  
+[2017/06/16 14:28:48 796] transport  1262 POST / HTTP/1.1
+Host: login.ccnu.edu.cn
+Content-Type: text/plain
+Content-Length: 126
+User-Agent: iFLYCloud
+Cache-Control: no-cache
+Accept: */*
+
+ver=MSSP+0%2E9&sub=iat&cmd=grs&cver=5%2E0%2E11%2E1086&csid=cisr1PdHHBHeER%2BXHYc2aadatw6alcgwaa&key=0c/CGzTQkOTvsbN6G9fVenmQ==  
+[2017/06/16 14:28:48 798] transport  480  [soc] [0] send ok  278  
+[2017/06/16 14:28:48 860] transport  492  [soc] [0] readable  
+[2017/06/16 14:28:48 861] transport  1534 HTTP/1.1 302 Temporarily Moved
+Date: Sat, 17 Jun 2017 07:31:08 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+X-UA-Compatible: IE=edge;IE=11;IE=10;IE=9
+Location: http://login.ccnu.edu.cn/?cmd=login&mac=b8:27:eb:9c:3f:cd&ip=10.147.42.146&essid=CCNU&apname=AP-YBS-1D-4F-429&apgroup=ST-YBS1-3D-AP-GROUP&url=http%3A%2F%2Flogin%2Eccnu%2Eedu%2Ecn%2F
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+
+  
+[2017/06/16 14:28:48 861] transport  1281 a_complete_httpmessage  302  
+[2017/06/16 14:28:48 861] transport  1300 [http] HTTP 302, Temporarily Moved To  http://login.ccnu.edu.cn/?cmd=login&mac=b8:27:eb:9c:3f:cd&ip=10.147.42.146&essid=CCNU&apname=AP-YBS-1D-4F-429&apgroup=ST-YBS1-3D-AP-GROUP&url=http%3A%2F%2Flogin%2Eccnu%2Eedu%2Ecn%2F  
+[2017/06/16 14:28:48 861] transport  1139 [soc] disconnect   
+[2017/06/16 14:28:48 864] network    85   ipfromenv ,  ipcache  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:48 864] transport  1033 ns_i =  nil  
+[2017/06/16 14:28:48 963] transport  155  [dns] [0] response 202.114.33.12  
+[2017/06/16 14:28:48 963] transport  163  202  114  33  12  
+[2017/06/16 14:28:48 963] transport  199  ip front is  202.114.33  
+[2017/06/16 14:28:48 963] transport  229  unexpected ip  
+[2017/06/16 14:28:48 966] network    85   ipfromenv ,  ipcache  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:48 967] network    85   ipfromenv ,  ipcfg  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:48 968] transport  1108 [soc] connect   116.213.69.195  80  
+[2017/06/16 14:28:48 979] transport  458  [soc] [0] connected  
+[2017/06/16 14:28:48 979] isr_1conn  393  transport connect ok  
+[2017/06/16 14:28:48 979] transport  1160 build http request.  
+[2017/06/16 14:28:48 979] transport  1187 not a valid mssp message! ret=  0  
+[2017/06/16 14:28:50 798] isr_1conn  1218 grslt timeout  
+[2017/06/16 14:28:50 798] isr_1conn  1226 send rslt request  
+[2017/06/16 14:28:50 798] transport  1160 build http request.  
+[2017/06/16 14:28:50 799] transport  1262 POST / HTTP/1.1
+Host: login.ccnu.edu.cn
+Content-Type: text/plain
+Content-Length: 126
+User-Agent: iFLYCloud
+Cache-Control: no-cache
+Accept: */*
+
+ver=MSSP+0%2E9&sub=iat&cmd=grs&cver=5%2E0%2E11%2E1086&csid=cisr1PdHHBHeER%2BXHYc2aadatw6alcgwaa&key=0cv4b1svCOCo8bN6G9fVenmQ==  
+[2017/06/16 14:28:50 801] transport  480  [soc] [0] send ok  278  
+[2017/06/16 14:28:50 836] transport  492  [soc] [0] readable  
+[2017/06/16 14:28:50 837] transport  1534 HTTP/1.1 302 Temporarily Moved
+Date: Sat, 17 Jun 2017 07:31:10 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+X-UA-Compatible: IE=edge;IE=11;IE=10;IE=9
+Location: http://login.ccnu.edu.cn/?cmd=login&mac=b8:27:eb:9c:3f:cd&ip=10.147.42.146&essid=CCNU&apname=AP-YBS-1D-4F-429&apgroup=ST-YBS1-3D-AP-GROUP&url=http%3A%2F%2Flogin%2Eccnu%2Eedu%2Ecn%2F
+Content-Length: 0
+Connection: close
+Content-Type: text/html
+
+  
+[2017/06/16 14:28:50 838] transport  1281 a_complete_httpmessage  302  
+[2017/06/16 14:28:50 838] transport  1300 [http] HTTP 302, Temporarily Moved To  http://login.ccnu.edu.cn/?cmd=login&mac=b8:27:eb:9c:3f:cd&ip=10.147.42.146&essid=CCNU&apname=AP-YBS-1D-4F-429&apgroup=ST-YBS1-3D-AP-GROUP&url=http%3A%2F%2Flogin%2Eccnu%2Eedu%2Ecn%2F  
+[2017/06/16 14:28:50 838] transport  1139 [soc] disconnect   
+[2017/06/16 14:28:50 843] network    85   ipfromenv ,  ipcache  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:50 843] transport  1033 ns_i =  nil  
+[2017/06/16 14:28:50 848] transport  155  [dns] [0] response 202.114.33.12  
+[2017/06/16 14:28:50 848] transport  163  202  114  33  12  
+[2017/06/16 14:28:50 848] transport  199  ip front is  202.114.33  
+[2017/06/16 14:28:50 849] transport  229  unexpected ip  
+[2017/06/16 14:28:50 852] network    85   ipfromenv ,  ipcache  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:50 856] network    85   ipfromenv ,  ipcfg  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:50 856] transport  1108 [soc] connect   116.213.69.195  80  
+[2017/06/16 14:28:50 869] transport  458  [soc] [0] connected  
+[2017/06/16 14:28:50 869] isr_1conn  393  transport connect ok  
+[2017/06/16 14:28:50 869] transport  1160 build http request.  
+[2017/06/16 14:28:50 869] transport  1187 not a valid mssp message! ret=  0  
+[2017/06/16 14:28:51 779] isr_1conn  236  The called number of status_cb_timeout:  3  
+[2017/06/16 14:28:52 731] isr_1conn  2151 netperf_session_timeout =   20  
+[2017/06/16 14:28:52 731] isr_1conn  2154 MSC:session timeout!  
+[2017/06/16 14:28:52 734] network    85   ipfromenv ,  ipcache  login.ccnu.edu.cn  def  nil  
+[2017/06/16 14:28:52 734] transport  1139 [soc] disconnect   
+[2017/06/16 14:28:52 801] isr_1conn  1218 grslt timeout  
+[2017/06/16 14:28:52 801] isr_1conn  1226 send rslt request  
+[2017/06/16 14:28:52 879] isr_1conn  1915 ASR_CLOUD_MSG_SSE  
+[2017/06/16 14:28:52 884] isr_1conn  1250 isr_1conn session info  
+[2017/06/16 14:28:52 899] isr_1conn  2061 slave session finished! ret =   10114  

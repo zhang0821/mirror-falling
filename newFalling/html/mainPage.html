@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../css/main.css" type="text/css" />
+<!-- <script type="text/javascript" src="__PUBLIC__/Monitor/js/jquery-1.11.3.min.js"></script> -->
+<script type="text/javascript" src="../js/jquery.min.js"></script>     
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/highcharts.js"></script>
+<link rel="shortcut icon" href="../img/title11.ico" type="image/x-icon" />
+
+<title>ACTL姿态检测</title>
+</head>
+<body>
+	<div class="header">
+		<img class="nav-pct" src="../img/run.gif" />
+		<!-- <img class="nav-pct" src="__PUBLIC__/Monitor/img/picture2.jpg" /> -->
+		<p class="nav-text">华中师范大学——ACTL</p> 
+		<div class="nav-date-box" >
+			<div class="date-content">
+				<script type="text/javascript">
+					document.write(year + '年' + mon + '月' + day + '日   ' + week);
+				</script>
+			</div>
+		</div>
+	</div>
+	<div class="Content">
+	<!--引入画图界面-->
+		<!-- <include file="html/curveDraw" /> -->
+		<div class="curveTitle">
+			<p>用户姿态实时检测系统<p>
+		</div>
+
+		<div class="CircleBox" onclick="CirShowHiddenBox()">
+			
+		</div>
+
+		<div class="configBox">
+			<li><a href="#sensor1" onclick="operate(1)">查询</a>
+			</li>
+			<li><a href="#sensor2" onclick="operate(0)">配置</a>
+			</li>
+		</div>
+
+		<div class="userStateBox" >
+			<div class="singleUser">
+				<div class="infoShow0">
+					
+				</div>
+				<div class="uesrinfo uesrinfo1">
+					<!-- <p>&nbsp<br>他<br>跌<br>倒<br>了<br>！<br>&nbsp<br></p> -->
+				</div>
+				<div class="userstate1">
+					<img class="statePct" src="../img/offline.png" />
+				</div>
+				
+			</div>
+
+			<div class="singleUser">
+				<div class="infoShow1">
+					
+				</div>
+				<div class="uesrinfo uesrinfo2">
+					<!-- <p>&nbsp<br>他<br>跌<br>倒<br>了<br>！<br>&nbsp<br></p> -->
+				</div>
+				<div class="userstate2">
+					<img class="statePct" src="../img/offline.png" />
+				</div>
+			</div>
+
+			<div class="singleUser">
+				<div class="infoShow2">
+					
+				</div>
+				<div class="uesrinfo uesrinfo3">
+					<!-- <p>&nbsp<br>他<br>跌<br>倒<br>了<br>！<br>&nbsp<br></p> -->
+				</div>
+				<div class="userstate3">
+					<img class="statePct"  src="../img/offline.png" />
+				</div>
+			</div>
+
+			<div class="singleUser">
+				<div class="infoShow3">
+					
+				</div>
+				<div class="uesrinfo uesrinfo4">
+					<!-- <p>&nbsp<br>他<br>跌<br>倒<br>了<br>！<br>&nbsp<br></p> -->
+				</div>
+				<div class="userstate4">
+					<img class="statePct" src="../img/offline.png" />
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer">
+			<h5 style="color:rgba(34,117,76,0.5);font-size:15px;font-family: 微软雅黑;text-align: center;">Copyright © 2017 ACTL. 华中师范大学
+			</h5>
+			<div style="width: 100%;height:30px;float: left;background: #ccc;">
+			<form action="" method="post" enctype="multipart/form-data">
+					<input type="file" name="fileUpload">
+					<input type="submit" value="上传文件">
+			</form>
+			</div>
+	</div>
+	<!--引入配置&查询界面-->
+	<!-- <include file="html/settingPage" />
+	<include file="html/querry" /> -->
+	<div class="setBox">	
+		<ul class="tabs">
+			<li>
+				<input type="radio" name="tabs" id="tab1" checked="checked" class="bigTab" />
+				<label for="tab1">阈值配置</label>
+				<div id="tab-content-threshold" class="tab-content">
+					1111111111111111
+				</div>
+			</li>
+
+			<li>
+					<input type="radio" name="tabs" id="tab2" class="bigTab" />
+					<label for="tab2">联系人</label>
+					<div id="tab-content-contact" class="tab-content" >	
+						2222222222222
+
+					</div>
+				</li>
+		</ul>
+
+			<!--提交-->
+		<div class="submitBox" >
+			<div class="subButton" onclick="submitSet()">
+				提交配置
+			</div>
+		</div>
+		<div class="closeBtn">
+			<div onclick="setClose(0)">
+				<a >+</a>	
+			</div>
+		</div>
+	
+	</div>
+	
+	<div id="checkBox" class="check">
+		<div class="checkBoxTop" >
+			<a>用户运动记录查询</a>
+			
+			<div style="width:20px;height: 20px;border-radius: 50% 50%;float: right;margin-right:10px;;margin-top:10px; margin-right:5px;background:rgba(34,117,76,0.7);" onclick="setClose(1)">
+				<a style="font-size:25px;width:10px;height:10px;margin-top:-8px;margin-left:12px;float:left;color:#000; transform:rotate(45deg);cursor:pointer; ">+</a><!---->
+				
+			</div>
+			
+			<div id="hisDateBox" onclick="chooseHisDateBox(0)">
+				今天
+			</div>
+			
+		</div>
+		<div class="dateLiBox">
+			<li onclick="chooseHisDateBox(8)">
+			今天
+			</li>
+			<li onclick="chooseHisDateBox(1)">
+			前1天
+			</li>
+			<li onclick="chooseHisDateBox(2)">
+			前2天
+			</li>
+			<li onclick="chooseHisDateBox(3)">
+			前3天
+			</li>
+			<li onclick="chooseHisDateBox(4)">
+			前4天
+			</li>
+			<li onclick="chooseHisDateBox(5)">
+			前5天
+			</li>
+			<li onclick="chooseHisDateBox(6)">
+			前6天
+			</li>
+			<li onclick="chooseHisDateBox(7)">
+			前7天
+			</li>
+		</div>
+		
+		<div id="hisDataContainer">
+			<div style="width: 100%;height: 500px;background: #fff;" id="curveBox">
+			
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>

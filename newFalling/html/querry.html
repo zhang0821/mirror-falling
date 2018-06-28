@@ -1,0 +1,48 @@
+	<div id="checkBox" class="check">
+		<div class="checkBoxTop" >
+			<a>用户运动记录查询</a>
+			
+			<div style="width:20px;height: 20px;border-radius: 50% 50%;float: right;margin-right:10px;;margin-top:10px; margin-right:5px;background:rgba(34,117,76,0.7);" onclick="setClose(1)">
+				<a style="font-size:25px;width:10px;height:10px;margin-top:-8px;margin-left:12px;float:left;color:#000; transform:rotate(45deg);cursor:pointer; ">+</a><!---->
+				
+			</div>
+			
+			<div id="hisDateBox" onclick="chooseHisDateBox(0)">
+				今天
+			</div>
+			
+		</div>
+		<div class="dateLiBox">
+			<li onclick="chooseHisDateBox(8)">
+			今天
+			</li>
+			<li onclick="chooseHisDateBox(1)">
+			前1天
+			</li>
+			<li onclick="chooseHisDateBox(2)">
+			前2天
+			</li>
+			<li onclick="chooseHisDateBox(3)">
+			前3天
+			</li>
+			<li onclick="chooseHisDateBox(4)">
+			前4天
+			</li>
+			<li onclick="chooseHisDateBox(5)">
+			前5天
+			</li>
+			<li onclick="chooseHisDateBox(6)">
+			前6天
+			</li>
+			<li onclick="chooseHisDateBox(7)">
+			前7天
+			</li>
+		</div>
+		
+		<div id="hisDataContainer">
+			<div style="width: 100%;height: 500px;background: #fff;" id="curveBox">
+			
+			</div>
+		</div>
+		
+	</div>

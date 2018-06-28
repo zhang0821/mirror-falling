@@ -1,0 +1,8 @@
+github 更新地址
+
+https://github.com/HelloWk/MagicMirror
+
+
+群管博客地址 http://www.hellowk.cc
+
+使用说明文章：http://www.hellowk.cc/2016/02/18/raspberry-pi-magic-mirror-2/
